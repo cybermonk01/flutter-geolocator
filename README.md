@@ -164,7 +164,7 @@ To query the current location of the device simply make a call to the `getCurren
 ``` dart
 import 'package:geolocator/geolocator.dart';
 
-Position position = await Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.high);
+Position position = await Geolocator().getCurrentPosition(desiredAccuracy: LocationAccuracy.high);
 ```
 
 To query the last known location retrieved stored on the device you can use the `getLastKnownPosition` method (note that this can result in a `null` value when no location details are available):
